@@ -38,9 +38,7 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link link-light" href="{{ route('live') }}">{{ __('Live') }}</a>
-                        </li>
+
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -56,6 +54,9 @@
                                 </li>
                             @endif --}}
                         @else
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="{{ route('live') }}">{{ __('Live') }}</a>
+                        </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link link-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ ucwords(strtolower(Auth::user()->name)) }}
