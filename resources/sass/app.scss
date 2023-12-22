@@ -1,0 +1,45 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+/*
+*******************************************************************************************************************
+0 - Body
+*******************************************************************************************************************
+*/
+
+body {
+    background-image: url('/public/assets/img/FondoV2.jpg');
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Point Regular', Arial, Helvetica, sans-serif;
+}
+
+.well{
+	border: 20px solid hsla(0, 0%, 100%, .2);
+	background: hsla(0, 0%, 100%, .6);
+	background-clip: padding-box;
+	border-radius: 45px;
+	margin-top: 45px;
+}
+
+.form-control{
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0;
+}
+
+.form-control:focus{
+    background-color: transparent;
+    border-color: #5cb85c;
+    box-shadow: none;
+}
