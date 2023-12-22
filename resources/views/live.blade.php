@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8 ">
 
-                <img src="{{ asset('/img/logoWhite.png') }}" style="max-width: 250px;"
+                <img src="{{ asset('assets/img/despegamos.png') }}" style="max-width: 450px;"
                     class="img-fluid ms-auto me-auto d-block mb-5" />
             </div>
 
@@ -14,12 +14,11 @@
 
                 <div class="row">
 
-                    {{-- @livewire('live-component') --}}
-
+                    @livewire('live-component')
 
                 </div>
 
-                <div class="col-12 text-center green-amway mt-4">
+                <div class="col-12 text-center text-success mt-4">
                     #Convención2024
                 </div>
 
